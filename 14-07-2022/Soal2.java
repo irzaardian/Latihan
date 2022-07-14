@@ -19,20 +19,7 @@ public class Soal2 {
                 jumlah_bilangan_prima = jumlah_bilangan_prima + 1;
             }
         }
-        if (jumlah_bilangan_prima > 0) {
-            System.out.println(jumlah_bilangan_prima);
-            System.out.println("Penjelasan");
-            System.out.print("Bilangan primanya adalah ");
-            for (int i = 0; i < bil_prima.size(); i++) {
-                if (i == bil_prima.size() - 1) {
-                    System.out.print(bil_prima.get(i));
-                } else {
-                    System.out.print(bil_prima.get(i) + ", ");
-                }
-            }
-        } else {
-            System.out.println(jumlah_bilangan_prima);
-        }
+        System.out.println(jumlah_bilangan_prima);
         sc.close();
     }
 }
