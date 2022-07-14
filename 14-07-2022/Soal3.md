@@ -10,7 +10,7 @@ Input
 ```
 Output
 ```
-["Jakarta"]
+Jakarta
 ```
 
 #### Contoh 2
@@ -20,5 +20,5 @@ Input
 ```
 Output
 ```
-["Tokyo"]
+Tokyo
 ```
