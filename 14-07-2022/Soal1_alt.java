@@ -17,18 +17,12 @@ public class Soal1_alt {
                 if (uang >= Cola) {
                     minuman.add("Cola");
                     uang = uang - Cola;
-                    if (uang >= Aqua) {
-                        minuman.add("Aqua");
-                        uang = uang - Aqua;
-                        if (uang >= Frutang) {
-                            minuman.add("Frutang");
-                            uang = uang - Frutang;
-                        }
-                    }
-                } else if (uang >= Aqua) {
+                }
+                if (uang >= Aqua) {
                     minuman.add("Aqua");
                     uang = uang - Aqua;
-                } else if (uang >= Frutang) {
+                }
+                if (uang >= Frutang) {
                     minuman.add("Frutang");
                     uang = uang - Frutang;
                 }
