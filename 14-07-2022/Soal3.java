@@ -15,5 +15,6 @@ public class Soal3 {
             }
         }
         System.out.println(id_terpanjang);
+        scan.close();
     }
 }

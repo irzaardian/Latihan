@@ -33,6 +33,6 @@ public class Soal2 {
         } else {
             System.out.println(jumlah_bilangan_prima);
         }
-
+        sc.close();
     }
 }
