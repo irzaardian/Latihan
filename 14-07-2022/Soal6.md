@@ -5,6 +5,7 @@ Indeks massa tubuh (body mass indeks) atau disingkat BMI adalah pengukuran yang 
 Program ini menerima 3 inputan berupa `Usia`, `Berat Badan (kg)`, dan `Tinggi Badan (m)`.
 
 Mengukur BMI dapat menggunakan rumus berikut.
+
 ![Rumus BMI](https://cdn.hellosehat.com/wp-content/uploads/2016/08/bmiformula-metric.png)
 
 Kemudian, tampilkan hasil perhitungan BMI dan tentukan termasuk dalam kategori apakah hasil perhitungan tersebut.
