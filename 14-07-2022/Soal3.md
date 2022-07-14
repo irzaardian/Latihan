@@ -20,5 +20,15 @@ Input
 ```
 Output
 ```
+Berlin
+```
+
+#### Contoh 3
+Input
+```
+["Tokyo", "Nepal", "Oslo"]
+```
+Output
+```
 Tokyo
 ```
