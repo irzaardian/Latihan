@@ -13,5 +13,6 @@ public class Soal4 {
             first = second;
             second = temp;
         }
+        sc.close();
     }
 }

@@ -10,6 +10,7 @@ public class Soal6 {
 
         if (usia >= 18) {
             bmi = bb / Math.pow(tinggi, 2);
+            bmi = Math.round(bmi); // pembulatan
             System.out.println(bmi);
             if (bmi < 18.5) {
                 System.out.println("Berat badan kurang");
@@ -26,5 +27,6 @@ public class Soal6 {
         } else {
             System.out.println("Usia tidak mencukupi");
         }
+        sc.close();
     }
 }

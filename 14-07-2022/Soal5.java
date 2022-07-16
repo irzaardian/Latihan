@@ -18,9 +18,10 @@ public class Soal5 {
         if (kapital && numerik && password.length() >= 8) {
             System.out.println("Kuat");
         } else if (password.length() >= 12) {
-            System.out.println("Agak kuat");
+            System.out.println("Agakkuat");
         } else {
             System.out.println("Lemah");
         }
+        sc.close();
     }
 }
