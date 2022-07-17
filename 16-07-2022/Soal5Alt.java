@@ -43,6 +43,8 @@ public class Soal5Alt {
 
 /*
  * Fungsi 'swap' menerima OBJECT Comparator sebagai parameter ketiga
+ * Dengan mengirimkan fungsi-nya saja kesini, kita tidak perlu menjalankan switch-case di dalam pengulangan (cukup sekali di awal)
+ * Karena nilai dari variable 'menu' tidak akan berubah
  */
 static String[] swap(String a[], String b[], Comparator comparator) {
   for (int i = 0; i < b.length; i++) {
