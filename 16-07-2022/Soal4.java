@@ -6,13 +6,8 @@ public class Soal4 {
         ArrayList<Integer> move = new ArrayList<Integer>();
 
         for (int i = 0; i < A.length; i++) {
-            boolean duplicate = false;
-            for (int j = 0; j < move.size(); j++) {
-                if (A[i] == move.get(j)) {
-                    duplicate = true;
-                }
-            }
-            if (duplicate == false) {
+            boolean duplicate = move.contains(A[i]);
+            if (!duplicate) {
                 move.add(A[i]);
             }
         }

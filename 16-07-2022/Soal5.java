@@ -7,30 +7,30 @@ public class Soal5 {
                 switch (menu) {
                     case "ASC":
                         if (b[i].compareTo(b[j]) > 0) {
-                            String temp = b[i];
-                            b[i] = b[j];
-                            b[j] = temp;
-
-                            String temp_buku = a[i];
-                            a[i] = a[j];
-                            a[j] = temp_buku;
+                            swap(a, b, i, j);
                         }
                         break;
                     case "DESC":
                         if (b[i].compareTo(b[j]) < 0) {
-                            String temp = b[i];
-                            b[i] = b[j];
-                            b[j] = temp;
-
-                            String temp_buku = a[i];
-                            a[i] = a[j];
-                            a[j] = temp_buku;
+                            swap(a, b, i, j);
                         }
+                        break;
                     default:
                         return a;
                 }
             }
         }
+        return a;
+    }
+
+    static String[] swap(String a[], String b[], int i, int j) {
+        String temp = b[i];
+        b[i] = b[j];
+        b[j] = temp;
+
+        String temp_buku = a[i];
+        a[i] = a[j];
+        a[j] = temp_buku;
         return a;
     }
 
