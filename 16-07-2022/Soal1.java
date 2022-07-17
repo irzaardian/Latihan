@@ -9,8 +9,8 @@ public class Soal1 {
         while (input > 0) {
             temp = input % 10;
             input = input / 10;
-            if (temp == 0) {
-                if (first_print != false) {
+            if (first_print == false) {
+                if (temp != 0) {
                     System.out.print(temp);
                     first_print = true;
                 }

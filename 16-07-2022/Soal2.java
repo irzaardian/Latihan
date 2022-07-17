@@ -10,7 +10,7 @@ public class Soal2 {
         sc.close();
         StringTokenizer st1 = new StringTokenizer(input);
         int operasi = 0;
-        for (int i = 0; st1.hasMoreTokens(); i++) {
+        while (st1.hasMoreTokens()) {
             token.add(st1.nextToken());
         }
         if (token.size() > 1) {
