@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Soal2 {
@@ -6,13 +7,13 @@ public class Soal2 {
         String a = sc.nextLine();
         sc.close();
         String formatChecker[] = a.split(" ");
-        String opearatorChecker[] = { "+", "-", "*", "/" };
-        boolean containOperator = false;
-        for (int i = 0; i < opearatorChecker.length; i++) {
-            if (formatChecker[formatChecker.length - 1].contains(opearatorChecker[i])) {
-                containOperator = true;
-            }
-        }
+        ArrayList<String> opearatorChecker = new ArrayList<String>();
+        opearatorChecker.add("+");
+        opearatorChecker.add("-");
+        opearatorChecker.add("*");
+        opearatorChecker.add("/");
+        boolean containOperator = opearatorChecker.contains(formatChecker[formatChecker.length - 1]);
+
         if (containOperator == false) {
             a = a.replace(" ", "");
             String numberStr[] = a.replaceAll("[+*/()-]+", " ").split(" ");
