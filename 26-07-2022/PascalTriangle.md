@@ -1,5 +1,5 @@
 ### Deskripsi
-Diberikan sebuah integer `n`, buatlah program untuk mencetak Segitiga Pascal sebanyak `n` baris dalam bentuk array 2 dimensi.
+Diberikan sebuah integer `n`, buatlah program untuk mencetak Segitiga Pascal sebanyak `n` baris dalam bentuk matrix 2 dimensi.
 
 Pada sebuah segitiga Pascal, setiap elemen di bagian dalamnya merupakan penjumlahan dari dua elemen di atas kiri dan atas kanannya.
 
