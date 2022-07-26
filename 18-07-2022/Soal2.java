@@ -16,23 +16,24 @@ public class Soal2 {
 
         if (containOperator == false) {
             a = a.replace(" ", "");
-            String numberStr[] = a.replaceAll("[+*/()-]+", " ").split(" ");
-            String operatorStr[] = a.replaceAll("[0-9()]+", "").split("");
+
+            String numberStr[] = a.split("[+*/()-]+");
+            String operatorStr[] = a.split("[.\\d]+");
             int result = Integer.parseInt(numberStr[0]);
 
-            for (int i = 0; i < operatorStr.length; i++) {
+            for (int i = 1; i < operatorStr.length; i++) {
                 switch (operatorStr[i]) {
                     case "+":
-                        result += Integer.parseInt(numberStr[i + 1]);
+                        result += Integer.parseInt(numberStr[i]);
                         break;
                     case "-":
-                        result -= Integer.parseInt(numberStr[i + 1]);
+                        result -= Integer.parseInt(numberStr[i]);
                         break;
                     case "*":
-                        result *= Integer.parseInt(numberStr[i + 1]);
+                        result *= Integer.parseInt(numberStr[i]);
                         break;
                     case "/":
-                        result /= Integer.parseInt(numberStr[i + 1]);
+                        result /= Integer.parseInt(numberStr[i]);
                         break;
                 }
             }

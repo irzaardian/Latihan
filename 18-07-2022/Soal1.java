@@ -8,18 +8,16 @@ public class Soal1 {
         String buku[] = { "Inventing Anna", "A Walk To Remember", "Pride and Prejudice",
                 "Harry Potter and The Goblet of Fire", "Anna Karenina", "The Walking Dead",
                 "Harry Potter and The Deathly Hollows" };
-        String buku_op[] = new String[buku.length];
         String input = sc.nextLine();
         sc.close();
-        for (int i = 0; i < buku_op.length; i++) {
-            buku_op[i] = buku[i].toLowerCase();
-            if (buku_op[i].contains(input)) {
+        for (int i = 0; i < buku.length; i++) {
+            if (buku[i].toLowerCase().contains(input)) {
                 sort.add(buku[i]);
             }
         }
         for (int i = 0; i < sort.size(); i++) {
             for (int j = i + 1; j < sort.size(); j++) {
-                if (sort.get(i).compareTo(sort.get(j)) > 0) {
+                if (sort.get(i).toLowerCase().compareTo(sort.get(j).toLowerCase()) > 0) {
                     String temp = sort.get(i);
                     sort.set(i, sort.get(j));
                     sort.set(j, temp);
