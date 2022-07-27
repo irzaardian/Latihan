@@ -14,15 +14,12 @@ public class MatrixDiagonalSum {
                 d1 = d1 + m[i][j];
             }
             if (m.length % 2 != 0) { // size m ganjil
-                for (int k = kIterator; k >= kIterator; k--) {
-                    if (m[i][k] != center) {
-                        d2 = d2 + m[i][k];
-                    }
+                if (m[i][kIterator] != center) {
+                    d2 = d2 + m[i][kIterator];
                 }
             } else { // size m genap
-                for (int k = kIterator; k >= kIterator; k--) {
-                    d2 = d2 + m[i][k];
-                }
+                d2 = d2 + m[i][kIterator];
+
             }
             kIterator--;
         }
