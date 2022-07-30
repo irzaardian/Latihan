@@ -2,9 +2,9 @@
 You are given a **0-indexed** integer array `nums`. Rearrange the values of `nums` according to the following rules:
 
 1. Sort the values at odd indices of nums in **decreasing** order.
-    - For example, if `nums = [3,`**<u>`2`</u>**`,1,`**<u>`4`</u>**`]` before this step, it becomes `[3,`**<u>`4`</u>**`,1,`**<u>`2`</u>**`]` after. The values at odd indices `1` and `3` are sorted in **decreasing** order.
+    - For example, if `nums = [3,`**<ins>`2`</ins>**`,1,`**<ins>`4`</ins>**`]` before this step, it becomes `[3,`**<ins>`4`</ins>**`,1,`**<ins>`2`</ins>**`]` after. The values at odd indices `1` and `3` are sorted in **decreasing** order.
 2.  Sort the values at even indices of nums in **increasing** order.
-    - For example, if `nums = [`**<u>`3`</u>**`,2,`**<u>`1`</u>**`,4]` before this step, it becomes `[`**<u>`1`</u>**`,2,`**<u>`3`</u>**`,4]` after. The values at even indices `0` and `2` are sorted in **increasing** order.
+    - For example, if `nums = [`**<ins>`3`</ins>**`,2,`**<ins>`1`</ins>**`,4]` before this step, it becomes `[`**<ins>`1`</ins>**`,2,`**<ins>`3`</ins>**`,4]` after. The values at even indices `0` and `2` are sorted in **increasing** order.
 
 Return the array formed after rearranging the values of `nums`.
 
